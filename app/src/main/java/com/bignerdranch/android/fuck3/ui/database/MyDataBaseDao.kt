@@ -21,4 +21,8 @@ interface MyDataBaseDao {
 
     @Query("SELECT * FROM my_data_table WHERE id = :userId")
     suspend fun getUserById(userId: Int): MyData?
+
+    @Query("SELECT * FROM my_data_table ORDER BY id DESC LIMIT 1")
+    suspend fun getLastCreatedUser(): MyData?
+
 }
