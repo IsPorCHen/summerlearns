@@ -1,0 +1,36 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    android:layout_margin="8dp">
+
+
+    <LinearLayout
+        android:id="@+id/movieLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/movie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:text="Movie"
+            />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:text="Rating"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
